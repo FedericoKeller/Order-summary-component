@@ -1,0 +1,194 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desatured-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --black: #000;
+    --white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif!important;
+    font-weight: 500;
+}
+
+.u-margin-top-big { 
+    margin-top: 4rem!important; 
+}
+
+.u-margin-top-more-medium { 
+    margin-top: 2.5rem!important; 
+}
+
+.u-margin-top-medium { 
+    margin-top: 1.5rem!important; 
+}
+
+.main__container {
+    background: var(--pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 52rem;
+    width: 32rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+}
+
+.card__picture {
+    background-size: contain;
+    background-image: url('./images/illustration-hero.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 16rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.card__body {
+    text-align: center;
+}
+
+.card__title {
+    font-weight: 900;
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
+
+.card__text {
+    padding: 0 5rem;
+    color: var(--desatured-blue);
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+.card__box {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 0 3rem;
+    border-radius: 1rem;
+
+
+}
+
+.card__box__right {
+    display: flex;
+    align-items: center;
+}
+
+.card__box__right__text {
+    line-height: 1.7;
+}
+
+.card__box__left {
+    display: flex;
+    align-items: center;
+}
+
+
+.card__box__img {
+    margin-right: 1.2rem;
+    width: 4rem;
+}
+
+.card__box--header {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.card__box--body {
+    color: var(--desatured-blue);
+}
+
+.btn--change {
+    color: var(--bright-blue);
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    text-decoration-line: underline;
+    transition: all .2s;
+}
+.btn--change:hover {
+    color: var(--desatured-blue);
+}
+.btn__container {
+    text-align: center;
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn--action {  
+    color: var(--pale-blue);
+    background-color: var(--bright-blue);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    letter-spacing: 0.4px;
+    transition: all .2s;
+    backface-visibility: hidden;
+    
+
+}
+
+.btn--action:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0, .15);
+
+}
+
+.btn--action:active {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .15);
+    transform: translateY(0);
+}
+
+.btn--cancel {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--desatured-blue);
+    margin-top: 2rem;
+    transition: all .2s;
+    backface-visibility: hidden;
+
+}
+
+.btn--cancel:hover {
+    transform: translateY(-0.1rem);
+    color: var(--bright-blue)
+}
+
+.btn--cancel:active {
+    transform: translateY(0);
+}
+
+.attribution {
+    text-align: center;
+    background: var(--very-pale-blue)
+}
+
+
